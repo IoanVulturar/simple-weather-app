@@ -63,7 +63,7 @@ body {
 
 .not-found {
     margin: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -76,12 +76,20 @@ body {
 .not-found p {
     font-size: 20px;
 }
+.not-found p span {
+    text-transform: uppercase;
+}
 
 .weather-box {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     color: var(--main-color);
+}
+
+.weather-box h1 {
+    font-size: 40px;
+    margin: 20px 0;
 }
 
 .weather-box img {
@@ -108,7 +116,7 @@ body {
 
 .weather-details {
     color: var(--main-color);
-    display: flex;
+    display: none;
     justify-content: space-between;
     margin: 60px 20px 20px;
 }
