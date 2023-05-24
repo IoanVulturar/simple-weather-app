@@ -1,0 +1,134 @@
+:root {
+    --main-color: rgb(45, 52, 101);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white; 
+    width: 440px;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.search-box input {
+    width: 80%;
+    margin-left: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.search-box input::placeholder {
+    text-transform: lowercase;
+}
+
+.search-box button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.search-box button:hover {
+    background-color: var(--main-color);
+    color: white;
+} 
+
+.not-found {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found img {
+    max-width: 75%;
+    margin-bottom: 20px;
+}
+
+.not-found p {
+    font-size: 20px;
+}
+
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.weather-box img {
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.weather-box .temperature {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.weather-box .temperature span {
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+    margin-left: 4px;
+}
+
+.weather-box .description {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.weather-details {
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 20px 20px;
+}
+
+.humidity, .wind {
+    display: flex;
+    align-items: center;
+}
+
+.humidity i, .wind i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.humidity span, .wind span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.humidity p, .wind p {
+    font-size: 14px;
+    font-weight: 400;
+}
