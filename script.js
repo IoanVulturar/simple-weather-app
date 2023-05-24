@@ -33,8 +33,12 @@ const notFoundLocation = document.querySelector('.not-found p span')
 
 function showNotFound() {
   notFound.style.display = 'flex'
+  notFound.classList.add('fadeIn')
+
   weatherBox.style.display = 'none'
+  weatherBox.classList.remove('fadeIn')
   weatherDetails.style.display = 'none'
+  weatherDetails.classList.remove('fadeIn')
   notFoundLocation.innerHTML = input.value
   input.value = ''
 }
@@ -57,8 +61,12 @@ function showWeather(data) {
   windSpeed.innerHTML = `${data.wind.speed} km/h`
 
   notFound.style.display = 'none'
+  notFound.classList.remove('fadeIn')
+
   weatherBox.style.display = 'flex'
+  weatherBox.classList.add('fadeIn')
   weatherDetails.style.display = 'flex'
+  weatherDetails.classList.add('fadeIn')
   input.value = ''
 }
 
